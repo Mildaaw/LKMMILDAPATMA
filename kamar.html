@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Tipe Kamar & Tarif Sewa | Kost Bunda John Serpong</title>
+  <meta name="description" content="Pilihan kamar Kost Bunda John dekat BRIN KST Serpong. Kontrakan privat mandiri, sharing house, dan kamar rumah A utama mulai Rp 650.000/bulan all-in listrik.">
+  <meta name="keywords" content="tipe kamar kost batan lama, harga kost batan lama serpong, sewa kontrakan batan lama a5, sewa kamar murah setu serpong">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#F4F8FB] text-[#1A2B38] font-sans antialiased">
+
+  <!-- NAVBAR PLACEHOLDER (Loaded from navbar.html) -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- MAIN CATALOG CONTENT -->
+  <main class="py-10 sm:py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- PAGE HEADER -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <h1 class="text-2xl sm:text-3xl font-extrabold text-[#1A2B38] tracking-tight">
+            Pilihan Tipe Kamar & Tarif Sewa
+          </h1>
+          <p class="text-stone-600 text-sm mt-1 max-w-2xl leading-relaxed">
+            Semua kamar berlokasi di Kost Bunda John - Komplek Batan Lama A-5, hanya 3 menit dari gerbang BRIN KST Serpong.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a href="denah.html" class="px-4 py-2.5 rounded-xl bg-white border border-[#D0E3EF] text-stone-700 hover:border-[#3A6FA8] text-xs sm:text-sm font-semibold transition flex items-center gap-2 shadow-sm">
+            <i class="fa-solid fa-compass-drafting text-[#3A6FA8]"></i>
+            Buka di Denah Rumah
+          </a>
+        </div>
+      </div>
+
+      <!-- FILTER TABS & STATUS FILTER -->
+      <div class="mb-8 p-4 rounded-2xl bg-white border border-[#D0E3EF] shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        
+        <!-- Category Filter -->
+        <div class="flex flex-wrap items-center gap-2 text-xs" id="category-filter-group">
+          <span class="text-stone-500 font-medium mr-1">Tipe:</span>
+          <button onclick="setBuildingFilter('all')" class="cat-btn active px-3.5 py-1.5 rounded-xl bg-[#3A6FA8] text-white font-semibold shadow-sm transition" data-building="all">
+            Semua (15)
+          </button>
+          <button onclick="setBuildingFilter('Kontrakan')" class="cat-btn px-3.5 py-1.5 rounded-xl bg-[#F4F8FB] text-stone-700 hover:bg-stone-200 transition" data-building="Kontrakan">
+            Kontrakan (4)
+          </button>
+          <button onclick="setBuildingFilter('Rumah A Utama')" class="cat-btn px-3.5 py-1.5 rounded-xl bg-[#F4F8FB] text-stone-700 hover:bg-stone-200 transition" data-building="Rumah A Utama">
+            Rumah A Utama (4)
+          </button>
+          <button onclick="setBuildingFilter('Rumah B')" class="cat-btn px-3.5 py-1.5 rounded-xl bg-[#F4F8FB] text-stone-700 hover:bg-stone-200 transition" data-building="Rumah B">
+            Rumah B (3)
+          </button>
+          <button onclick="setBuildingFilter('Rumah C')" class="cat-btn px-3.5 py-1.5 rounded-xl bg-[#F4F8FB] text-stone-700 hover:bg-stone-200 transition" data-building="Rumah C">
+            Rumah C (2)
+          </button>
+        </div>
+
+        <!-- Status Filter -->
+        <div class="flex items-center gap-2 text-xs">
+          <span class="text-stone-500 font-medium">Status:</span>
+          <select id="status-filter-select" onchange="renderRoomCards()" class="px-3 py-1.5 rounded-xl bg-[#F4F8FB] border border-[#D0E3EF] text-stone-800 text-xs font-semibold focus:outline-none">
+            <option value="all">Semua Status</option>
+            <option value="Tersedia">Hanya Tersedia (0 Unit)</option>
+            <option value="Terisi">Terisi (13 Unit)</option>
+          </select>
+        </div>
+
+      </div>
+
+      <!-- ROOM CARDS GRID CONTAINER -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="rooms-grid-container">
+        <!-- Rendered via JavaScript from ROOMS_DATA -->
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER (Loaded from footer.html) -->
+  <div id=footer-placeholder></div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="shared.js"></script>
+  <script>
+    let activeBuilding = 'all';
+
+    function setBuildingFilter(bldg) {
+      activeBuilding = bldg;
+      const btns = document.querySelectorAll('.cat-btn');
+      btns.forEach(b => {
+        if (b.dataset.building === bldg) {
+          b.classList.add('bg-[#3A6FA8]', 'text-white');
+          b.classList.remove('bg-[#F4F8FB]', 'text-stone-700');
+        } else {
+          b.classList.remove('bg-[#3A6FA8]', 'text-white');
+          b.classList.add('bg-[#F4F8FB]', 'text-stone-700');
+        }
+      });
+      renderRoomCards();
+    }
+
+    function renderRoomCards() {
+      const container = document.getElementById('rooms-grid-container');
+      if (!container) return;
+
+      const statusFilter = document.getElementById('status-filter-select').value;
+
+      const filtered = ROOMS_DATA.filter(room => {
+        const matchBuilding = (activeBuilding === 'all') || 
+                              (room.building === activeBuilding) || 
+                              (activeBuilding === 'Rumah' && room.building.startsWith('Rumah'));
+        const matchStatus = (statusFilter === 'all') || (room.status === statusFilter);
+        return matchBuilding && matchStatus;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div class="col-span-full py-12 text-center bg-white rounded-3xl border border-[#D0E3EF] p-8">
+            <i class="fa-solid fa-door-closed text-3xl text-stone-400 mb-2"></i>
+            <h3 class="text-base font-bold text-stone-800">Tidak ada kamar yang sesuai filter</h3>
+            <p class="text-xs text-stone-500 mt-1">Coba pilih filter lain atau lihat semua kamar.</p>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = filtered.map(room => {
+        const isTersedia = room.status === 'Tersedia';
+        const badgeColor = isTersedia ? 'bg-emerald-100 text-emerald-800 border-emerald-300' : 'bg-stone-200 text-stone-700 border-stone-300';
+        const statusText = isTersedia ? 'TERSEDIA' : 'TERISI';
+        const waLink = generateRoomWhatsAppUrl(room.id, room.name, room.priceFormatted);
+
+        return `
+          <div class="bg-white border border-[#D0E3EF] rounded-3xl overflow-hidden shadow-sm hover:border-[#3A6FA8]/50 transition flex flex-col justify-between group">
+            
+            <div>
+              <!-- Card Header -->
+              <div class="p-5 pb-4 border-b border-[#D0E3EF] flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] font-semibold text-stone-500 uppercase tracking-wider block">${room.building} • ${room.zone}</span>
+                  <h3 class="text-base font-bold text-stone-900 group-hover:text-[#3A6FA8] transition">${room.id} - ${room.name}</h3>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold border ${badgeColor}">
+                  ${statusText}
+                </span>
+              </div>
+
+              <!-- Price & Specs Grid -->
+              <div class="p-5 space-y-4">
+                <div class="grid grid-cols-2 gap-2 bg-[#F4F8FB] p-3 rounded-2xl border border-[#D0E3EF] text-center">
+                  <div>
+                    <span class="text-[10px] text-stone-500 block">Tarif Sewa</span>
+                    <span class="text-sm font-extrabold text-[#3A6FA8]">${room.priceFormatted}<span class="text-[10px] text-stone-500 font-normal">/bln</span></span>
+                  </div>
+                  <div>
+                    <span class="text-[10px] text-stone-500 block">Ukuran</span>
+                    <span class="text-xs font-bold text-stone-800">${room.size}</span>
+                  </div>
+                </div>
+
+                <div class="space-y-1.5 text-xs text-stone-600">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-shower text-[#DE9E36] text-[11px] w-4 text-center"></i>
+                    <span>${room.bathroomType}</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-bolt text-amber-500 text-[11px] w-4 text-center"></i>
+                    <span>Listrik: ${room.electricity}</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-bed text-emerald-600 text-[11px] w-4 text-center"></i>
+                    <span>Fasilitas Tidur Lengkap</span>
+                  </div>
+                </div>
+
+                <p class="text-xs text-stone-500 line-clamp-2 leading-relaxed pt-1 border-t border-[#D0E3EF]">
+                  ${room.description}
+                </p>
+              </div>
+            </div>
+
+            <!-- Card Actions -->
+            <div class="p-4 bg-[#F4F8FB] border-t border-[#D0E3EF] flex items-center gap-2">
+              <button onclick="openRoomModal('${room.id}')" class="flex-1 py-2.5 rounded-xl bg-white border border-[#D0E3EF] hover:bg-stone-50 text-stone-700 text-xs font-semibold text-center transition">
+                Detail
+              </button>
+              <a href="denah.html?room=${room.id}" class="py-2.5 px-3 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-700 text-xs font-semibold text-center transition" title="Lihat di Denah">
+                <i class="fa-solid fa-compass-drafting text-[#3A6FA8]"></i>
+              </a>
+              <a href="${waLink}" target="_blank" class="flex-1 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold text-center transition flex items-center justify-center gap-1">
+                <i class="fa-brands fa-whatsapp"></i> Chat WA
+              </a>
+            </div>
+
+          </div>
+        `;
+      }).join('');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderRoomCards();
+    });
+  </script>
+</body>
+</html>

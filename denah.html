@@ -1,0 +1,677 @@
+﻿<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denah Sketsa & Blueprint Kost Bunda John | Dekat BRIN KST Serpong</title>
+  <meta name="description"
+    content="Denah arsitektur interaktif Kost Bunda John sesuai sketsa asli. Tata letak 4 Kontrakan Privat, Rumah A Utama, Rumah B & C, serta Dapur Bersama komunal.">
+  <meta name="keywords"
+    content="denah kost batan lama, denah rumah kost serpong, kost dekat brin kst serpong, kontrakan batan lama a5">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-[#F4F8FB] text-[#1A2B38] font-sans antialiased">
+
+  <!-- NAVBAR PLACEHOLDER (Loaded from navbar.html) -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- MAIN BLUEPRINT SECTION -->
+  <main class="py-10 sm:py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- PAGE HEADER (Clean & Clear) -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <h1 class="text-2xl sm:text-3xl font-extrabold text-[#1A2B38] tracking-tight">
+            Denah Tata Letak Kost Bunda John
+          </h1>
+          <p class="text-stone-600 text-sm mt-1 max-w-2xl leading-relaxed">
+            Tata letak presisi sesuai gambar sketsa: 4 Kontrakan di deretan atas, Rumah A Utama di tengah, Rumah
+            B di sayap kiri, Rumah C di bawah, dan Dapur Bersama. Klik kamar merah untuk melihat detail & WhatsApp.
+          </p>
+        </div>
+
+        <!-- Quick Summary Counters -->
+        <div
+          class="flex items-center gap-2 bg-white border border-[#D0E3EF] p-2 rounded-2xl shadow-sm self-start md:self-auto">
+          <div class="px-3 py-1.5 rounded-xl bg-[#F4F8FB] text-center border border-[#D0E3EF]">
+            <span class="text-[10px] text-stone-500 block font-mono">TOTAL</span>
+            <span class="text-xs font-bold text-stone-800">13 Kamar</span>
+          </div>
+          <div class="px-3 py-1.5 rounded-xl bg-emerald-50 border border-emerald-200 text-center">
+            <span class="text-[10px] text-emerald-700 block font-mono">TERSEDIA</span>
+            <span class="text-xs font-bold text-emerald-800" id="count-tersedia">0 Unit</span>
+          </div>
+          <div class="px-3 py-1.5 rounded-xl bg-stone-100 border border-stone-200 text-center">
+            <span class="text-[10px] text-stone-600 block font-mono">TERISI</span>
+            <span class="text-xs font-bold text-stone-700" id="count-terisi">13 Unit</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLOR LEGEND BAR (Sesuai Sketsa Asli) -->
+      <div class="mb-6 p-4 rounded-2xl bg-white border border-[#D0E3EF] shadow-sm">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <span class="text-xs font-bold uppercase tracking-wider text-stone-700 flex items-center gap-2">
+            <i class="fa-solid fa-palette text-[#3A6FA8]"></i> PANDUAN WARNA SKETSA:
+          </span>
+
+          <div class="flex flex-wrap items-center gap-2 sm:gap-3 text-xs font-medium">
+            <!-- Green: Building Wall -->
+            <div
+              class="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#EDF6F1] border border-[#2E7D5B] text-[#226348]">
+              <span class="w-3 h-3 rounded-sm bg-[#2E7D5B]"></span>
+              <span><strong>Hijau:</strong> Dinding Bangunan</span>
+            </div>
+
+            <!-- Red: Bedroom -->
+            <div
+              class="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#FDF2F0] border border-[#E06550] text-[#B83E2C]">
+              <span class="w-3 h-3 rounded-sm bg-[#E06550]"></span>
+              <span><strong>Merah:</strong> Kamar Tidur (Klik)</span>
+            </div>
+
+            <!-- Yellow: Bathroom -->
+            <div
+              class="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#FEF9EC] border border-[#DE9E36] text-[#A66E14]">
+              <span class="w-3 h-3 rounded-sm bg-[#DE9E36]"></span>
+              <span><strong>Kuning:</strong> Kamar Mandi</span>
+            </div>
+
+            <!-- Blue: Doors -->
+            <div
+              class="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#EDF4F9] border border-[#2B6CB0] text-[#205487]">
+              <span class="w-3 h-3 rounded-tl-full bg-[#2B6CB0]"></span>
+              <span><strong>Biru:</strong> Akses Pintu</span>
+            </div>
+
+            <!-- Purple: Kitchen -->
+            <div
+              class="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#F8F2F9] border border-[#8A6494] text-[#6B4675]">
+              <span class="w-3 h-3 rounded-sm bg-[#8A6494]"></span>
+              <span><strong>Ungu:</strong> Dapur</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FILTER TOOLBAR -->
+      <div class="mb-6 flex flex-wrap items-center justify-between gap-3 text-xs">
+        <div class="flex flex-wrap items-center gap-2" id="filter-container">
+          <span class="text-stone-500 font-medium mr-1">Tampilkan:</span>
+          <button onclick="filterFloorplan('all')"
+            class="filter-btn active px-3.5 py-1.5 rounded-xl bg-[#3A6FA8] text-white font-semibold shadow-sm transition"
+            data-filter="all">
+            Semua Kamar (13)
+          </button>
+          <button onclick="filterFloorplan('available')"
+            class="filter-btn px-3.5 py-1.5 rounded-xl bg-white border border-[#D0E3EF] text-stone-700 hover:border-emerald-500 hover:text-emerald-700 transition"
+            data-filter="available">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block mr-1"></span> Hanya Tersedia (0)
+          </button>
+          <button onclick="filterFloorplan('occupied')"
+            class="filter-btn px-3.5 py-1.5 rounded-xl bg-white border border-[#D0E3EF] text-stone-700 hover:border-stone-400 transition"
+            data-filter="occupied">
+            <span class="w-2 h-2 rounded-full bg-stone-400 inline-block mr-1"></span> Terisi (13)
+          </button>
+        </div>
+
+        <div class="flex items-center gap-2 text-stone-500 text-xs">
+          <i class="fa-solid fa-hand-pointer text-[#3A6FA8]"></i>
+          <span>Klik kamar merah atau dapur ungu untuk info lengkap & WhatsApp</span>
+        </div>
+      </div>
+
+      <!-- BLUEPRINT CANVAS CONTAINER (Drafting Paper Grid) -->
+      <div class="relative bg-floorplan-grid border border-[#D0E3EF] rounded-3xl p-4 sm:p-8 shadow-sm overflow-x-auto">
+
+        <!-- Blueprint Top Info -->
+        <div class="flex items-center justify-between border-b border-[#D0E3EF] pb-3 mb-6 text-xs text-stone-600">
+          <div class="flex items-center gap-2 font-semibold">
+            <i class="fa-solid fa-map-location-dot text-[#3A6FA8]"></i>
+            <span>SKETSA TATA LETAK DENAH — KOST BUNDA JOHN (BATAN LAMA NO. A-5)</span>
+          </div>
+          <div class="flex items-center gap-2 text-stone-500 font-mono text-[11px]">
+            <span>Arah Depan Komplek:</span>
+            <span class="px-2 py-0.5 rounded bg-white text-stone-800 font-bold border border-stone-200">Utara &uarr;</span>
+          </div>
+        </div>
+
+        <div class="min-w-[960px] grid grid-cols-12 gap-6 items-end">
+          <div class="col-span-4 flex flex-col justify-end space-y-6">
+
+            <!-- PAVILION A (Kotak Hijau di Kiri Bawah) -->
+            <div id="block-pavilion-a"
+              class="relative rounded-3xl border-[2.5px] border-[#2E7D5B] bg-white p-4 pt-5 shadow-sm flex flex-col justify-between">
+
+              <!-- Blue Entrance Door at Top-Right (Sesuai Sketsa) -->
+              <div class="absolute -top-3.5 right-6 z-20 flex flex-col items-center">
+                <div class="door-arc-top shadow-sm"></div>
+                <span
+                  class="text-[8px] text-[#2B6CB0] font-bold bg-white px-1 rounded -mt-0.5 border border-[#2B6CB0]">Pintu</span>
+              </div>
+
+              <!-- Building Header -->
+              <div class="flex items-center justify-between pb-2 mb-3 border-b border-[#D0E3EF] text-xs">
+                <span class="font-bold text-stone-800 flex items-center gap-1.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-[#2E7D5B]"></span>
+                  Rumah B
+                </span>
+                <span class="text-[11px] text-stone-500 font-semibold">Sharing Listrik</span>
+              </div>
+
+              <div class="space-y-3 flex-1 flex flex-col justify-between">
+
+                <!-- 1. TOP ROOM: Wide Horizontal Red Bedroom (PA-01) -->
+                <div onclick="openRoomModal('PA-01')"
+                  class="room-box p-3 rounded-2xl border-2 border-[#E06550] bg-[#FDF2F0] hover:bg-[#FBE8E5] transition text-center shadow-sm"
+                  data-status="Terisi" data-room-id="PA-01">
+                  <div class="flex items-center justify-between text-xs mb-1">
+                    <span class="font-bold text-[#B83E2C]">RB-01</span>
+                    <span class="px-1.5 py-0.5 rounded bg-stone-200 text-[9px] font-bold text-stone-700">TERISI</span>
+                  </div>
+                  <span class="text-xs font-bold text-stone-800 block">Kamar B-1</span>
+                  <span class="text-[11px] text-stone-600 block mt-0.5">Rp 650.000/bln</span>
+                </div>
+
+                <!-- 2. MIDDLE ROW: 2 Red Bedrooms (PA-02 & PA-03) -->
+                <div class="grid grid-cols-2 gap-2.5">
+                  <!-- PA-02 (Left) -->
+                  <!-- Contoh Tersedia
+                   <div onclick="openRoomModal('PA-02')"
+                    class="room-box p-2.5 rounded-2xl border-2 border-[#E06550] bg-[#FDF2F0] hover:bg-[#FBE8E5] transition shadow-sm"
+                    data-status="Tersedia" data-room-id="PA-02">
+                    <div class="flex items-center justify-between text-xs mb-1">
+                      <span class="font-bold text-[#B83E2C]">RB-02</span>
+                      <span class="px-1 py-0.5 rounded bg-emerald-600 text-[8px] font-bold text-white">TERSEDIA</span>
+                    </div>
+                    <span class="text-xs font-bold text-stone-800 block">Kamar B-2</span>
+                    <span class="text-[11px] font-bold text-[#3A6FA8] block mt-1">Rp 650.000/bln</span>
+                  </div>-->
+
+                  <div onclick="openRoomModal('PA-02')"
+                    class="room-box p-2.5 rounded-2xl border-2 border-[#E06550] bg-[#FDF2F0] hover:bg-[#FBE8E5] transition shadow-sm"
+                    data-status="Terisi" data-room-id="PA-02">
+                    <div class="flex items-center justify-between text-xs mb-1">
+                      <span class="font-bold text-[#B83E2C]">RB-02</span>
+                      <span class="px-1 py-0.5 rounded bg-stone-200 text-[8px] font-bold text-stone-700">TERISI</span>
+                    </div>
+                    <span class="text-xs font-bold text-stone-800 block">Kamar B-2</span>
+                    <span class="text-[11px] font-bold text-[#3A6FA8] block mt-1">Rp 650.000/bln</span>
+                  </div>
+
+                  <!-- PA-03 (Right) -->
+                  <div onclick="openRoomModal('PA-03')"
+                    class="room-box p-2.5 rounded-2xl border-2 border-[#E06550] bg-[#FDF2F0] hover:bg-[#FBE8E5] transition shadow-sm"
+                    data-status="Terisi" data-room-id="PA-03">
+                    <div class="flex items-center justify-between text-xs mb-1">
+                      <span class="font-bold text-[#B83E2C]">RB-03</span>
+                      <span class="px-1 py-0.5 rounded bg-stone-200 text-[8px] font-bold text-stone-700">TERISI</span>
+                    </div>
+                    <span class="text-xs font-bold text-stone-800 block">Kamar B-3</span>
+                    <span class="text-[11px] text-stone-600 block mt-1">Rp 650.000/bln</span>
+                  </div>
+                </div>
+
+                <!-- 3. BOTTOM ROW: Purple Dapur Internal (Left) & Yellow Bathroom (Right) -->
+                <div class="grid grid-cols-2 gap-2.5 pt-1">
+                  <!-- Purple Box: Dapur Internal -->
+                  <div
+                    class="p-2.5 rounded-xl border-2 border-[#8A6494] bg-[#F8F2F9] text-center flex flex-col items-center justify-center">
+                    <i class="fa-solid fa-fire-burner text-[#8A6494] text-xs mb-0.5"></i>
+                    <span class="text-[11px] font-bold text-[#6B4675]">Dapur Internal (Bersama)</span>
+                    <span class="text-[9px] text-stone-500">Khusus Rumah B</span>
+                  </div>
+
+                  <!-- Yellow Box: Kamar Mandi -->
+                  <div
+                    class="p-2.5 rounded-xl border-2 border-[#DE9E36] bg-[#FEF9EC] text-center flex flex-col items-center justify-center">
+                    <i class="fa-solid fa-shower text-[#DE9E36] text-xs mb-0.5"></i>
+                    <span class="text-[11px] font-bold text-[#A66E14]">Kamar Mandi</span>
+                    <span class="text-[9px] text-stone-500">Rumah B</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- ========================================================
+               RIGHT COLUMN (8 COLS):
+               - TOP: 4 KONTRAKAN PRIVAT (KP-01 s/d KP-04)
+               - CENTER: RUMAH UTAMA (6 KAMAR) DENGAN TATA LETAK SKETSA
+               - BOTTOM: PAVILION B & DAPUR BERSAMA
+               ======================================================== -->
+          <div class="col-span-8 space-y-6">
+
+            <!-- 1. TOP ROW: 4 STANDALONE KONTRAKAN PRIVAT -->
+            <div id="block-top-row" class="space-y-2">
+              <div class="flex items-center justify-between text-xs">
+                <span class="font-bold text-stone-800 flex items-center gap-1.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-[#2E7D5B]"></span>
+                  4 UNIT KONTRAKAN
+                </span>
+              </div>
+
+              <div class="grid grid-cols-4 gap-3">
+                <!-- Unit KP-01 -->
+                 <!-- Contoh Tersedia
+                <div
+                  class="relative rounded-2xl border-[2.5px] border-[#2E7D5B] bg-white p-2.5 pt-4 shadow-sm flex flex-col justify-between"
+                  data-status="Tersedia" data-room-id="KP-01">
+                  <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
+                    <div class="door-arc-top shadow-sm"></div>
+                  </div>
+                  <div class="text-[10px] text-center text-[#2E7D5B] mb-1 font-bold">UNIT 1</div>
+                  <div onclick="openRoomModal('KP-01')"
+                    class="room-box p-2 rounded-xl border-2 border-[#E06550] bg-[#FDF2F0] hover:bg-[#FBE8E5] transition text-center shadow-sm mb-2">
+                    <span class="text-xs font-bold text-[#B83E2C] block">KT-01</span>
+                    <span class="text-[10px] text-[#3A6FA8] font-bold block">Rp 650rb</span>
+                    <span class="mt-1 inline-block px-1.5 py-0.2 rounded bg-emerald-600 text-[8px] font-bold text-white">TERSEDIA</span>
+                  </div>
+                  <div class="p-1.5 rounded-lg border-2 border-[#DE9E36] bg-[#FEF9EC] text-center flex items-center justify-center gap-1">
+                    <i class="fa-solid fa-shower text-[#DE9E36] text-[10px]"></i>
+                    <span class="text-[10px] font-bold text-[#A66E14]">KM Dalam</span>
+                  </div>
+                </div>
+              -->
+                 <div
+                  class="relative rounded-2xl border-[2.5px] border-[#2E7D5B] bg-white p-2.5 pt-4 shadow-sm flex flex-col justify-between"
+                  data-status="Terisi" data-room-id="KP-01">
+                  <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
+                    <div class="door-arc-top shadow-sm"></div>
+                  </div>
+                  <div class="text-[10px] text-center text-[#2E7D5B] mb-1 font-bold">UNIT 1</div>
+                  <div onclick="openRoomModal('KP-01')"
+                    class="room-box p-2 rounded-xl border-2 border-[#E06550] bg-[#FDF2F0] hover:bg-[#FBE8E5] transition text-center shadow-sm mb-2">
+                    <span class="text-xs font-bold text-[#B83E2C] block">KT-01</span>
+                    <span class="text-[10px] text-[#3A6FA8] font-bold block">Rp 650rb</span>
+                    <span class="mt-1 inline-block px-1.5 py-0.2 rounded bg-stone-200 text-[8px] font-bold text-stone-700">TERISI</span>
+                  </div>
+                  <div class="p-1.5 rounded-lg border-2 border-[#DE9E36] bg-[#FEF9EC] text-center flex items-center justify-center gap-1">
+                    <i class="fa-solid fa-shower text-[#DE9E36] text-[10px]"></i>
+                    <span class="text-[10px] font-bold text-[#A66E14]">KM Dalam</span>
+                  </div>
+                </div>
+
+                <!-- Unit KP-02 -->
+                <div
+                  class="relative rounded-2xl border-[2.5px] border-[#2E7D5B] bg-white p-2.5 pt-4 shadow-sm flex flex-col justify-between"
+                  data-status="Terisi" data-room-id="KP-02">
+                  <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
+                    <div class="door-arc-top shadow-sm"></div>
+                  </div>
+                  <div class="text-[10px] text-center text-[#2E7D5B] mb-1 font-bold">UNIT 2</div>
+                  <div onclick="openRoomModal('KP-02')"
+                    class="room-box p-2 rounded-xl border-2 border-[#E06550] bg-[#FDF2F0] hover:bg-[#FBE8E5] transition text-center shadow-sm mb-2">
+                    <span class="text-xs font-bold text-[#B83E2C] block">KT-02</span>
+                    <span class="text-[10px] text-stone-600 block">Rp 650rb</span>
+                    <span class="mt-1 inline-block px-1.5 py-0.2 rounded bg-stone-200 text-[8px] font-bold text-stone-700">TERISI</span>
+                  </div>
+                  <div class="p-1.5 rounded-lg border-2 border-[#DE9E36] bg-[#FEF9EC] text-center flex items-center justify-center gap-1">
+                    <i class="fa-solid fa-shower text-[#DE9E36] text-[10px]"></i>
+                    <span class="text-[10px] font-bold text-[#A66E14]">KM Dalam</span>
+                  </div>
+                </div>
+
+                <!-- Unit KP-03 -->
+                <div
+                  class="relative rounded-2xl border-[2.5px] border-[#2E7D5B] bg-white p-2.5 pt-4 shadow-sm flex flex-col justify-between"
+                  data-status="Terisi" data-room-id="KP-03">
+                  <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
+                    <div class="door-arc-top shadow-sm"></div>
+                  </div>
+                  <div class="text-[10px] text-center text-[#2E7D5B] mb-1 font-bold">UNIT 3</div>
+                  <div onclick="openRoomModal('KP-03')"
+                    class="room-box p-2 rounded-xl border-2 border-[#E06550] bg-[#FDF2F0] hover:bg-[#FBE8E5] transition text-center shadow-sm mb-2">
+                    <span class="text-xs font-bold text-[#B83E2C] block">KT-03</span>
+                    <span class="text-[10px] text-[#3A6FA8] font-bold block">Rp 650rb</span>
+                    <span class="mt-1 inline-block px-1.5 py-0.2 rounded bg-stone-200 text-[8px] font-bold text-stone-700">TERISI</span>
+                  </div>
+                  <div class="p-1.5 rounded-lg border-2 border-[#DE9E36] bg-[#FEF9EC] text-center flex items-center justify-center gap-1">
+                    <i class="fa-solid fa-shower text-[#DE9E36] text-[10px]"></i>
+                    <span class="text-[10px] font-bold text-[#A66E14]">KM Dalam</span>
+                  </div>
+                </div>
+
+                <!-- Unit KP-04 -->
+                <div
+                  class="relative rounded-2xl border-[2.5px] border-[#2E7D5B] bg-white p-2.5 pt-4 shadow-sm flex flex-col justify-between"
+                  data-status="Terisi" data-room-id="KP-04">
+                  <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
+                    <div class="door-arc-top shadow-sm"></div>
+                  </div>
+                  <div class="text-[10px] text-center text-[#2E7D5B] mb-1 font-bold">UNIT 4</div>
+                  <div onclick="openRoomModal('KP-04')"
+                    class="room-box p-2 rounded-xl border-2 border-[#E06550] bg-[#FDF2F0] hover:bg-[#FBE8E5] transition text-center shadow-sm mb-2">
+                    <span class="text-xs font-bold text-[#B83E2C] block">KT-04</span>
+                    <span class="text-[10px] text-stone-600 block">Rp 650rb</span>
+                    <span class="mt-1 inline-block px-1.5 py-0.2 rounded bg-stone-200 text-[8px] font-bold text-stone-700">TERISI</span>
+                  </div>
+                  <div class="p-1.5 rounded-lg border-2 border-[#DE9E36] bg-[#FEF9EC] text-center flex items-center justify-center gap-1">
+                    <i class="fa-solid fa-shower text-[#DE9E36] text-[10px]"></i>
+                    <span class="text-[10px] font-bold text-[#A66E14]">KM Dalam</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+<!-- ----------------------------------------------------
+     2. CENTER: RUMAH UTAMA (STYLE DISAMAKAN DENGAN UNIT LAIN)
+     ---------------------------------------------------- -->
+<div id="block-main-house"
+  class="relative rounded-3xl border-[2.5px] border-[#2E7D5B] bg-white p-5 shadow-sm">
+
+  <!-- Left Exterior Blue Door -->
+  <div class="absolute top-1/2 -left-3.5 -translate-y-1/2 z-20">
+    <div class="door-arc-side shadow-sm"></div>
+  </div>
+
+  <!-- Right Exterior Blue Door (Atas-Kanan Sesuai Sketsa) -->
+  <div class="absolute top-12 -right-3.5 z-20">
+    <div class="door-arc-right shadow-sm"></div>
+  </div>
+
+  <!-- Bottom Exterior Blue Door (Bawah Sesuai Sketsa) -->
+  <div class="absolute -bottom-3.5 right-20 z-20">
+    <div class="door-arc-bottom shadow-sm"></div>
+  </div>
+
+  <!-- Header label -->
+  <div class="flex items-center justify-between pb-2 mb-3 border-b border-[#D0E3EF] text-xs">
+    <span class="font-bold text-stone-800 flex items-center gap-1.5">
+      <span class="w-2.5 h-2.5 rounded-full bg-[#2E7D5B]"></span>
+      Rumah A Utama
+    </span>
+    <span class="text-[11px] text-stone-500 font-semibold">4 Kamar Tidur • WIFI + ALL IN </span>
+  </div>
+
+  <div class="space-y-3.5">
+    
+    <!-- TOP SECTION OF MAIN HOUSE (R-01 & R-02 + Bathrooms) -->
+    <div class="grid grid-cols-12 gap-3 items-stretch">
+      
+      <!-- Top Left: Large Master Red Bedroom Box (R-01) -->
+      <div onclick="openRoomModal('RA-01')" class="col-span-6 room-box p-3.5 rounded-2xl border-2 border-[#E06550] bg-[#FDF2F0] hover:bg-[#FBE8E5] transition flex flex-col justify-between shadow-sm" data-status="Tersedia" data-room-id="R-01">
+        <div>
+          <div class="flex items-center justify-between text-xs mb-1">
+            <span class="font-bold text-[#B83E2C]">RA-01</span>
+          </div>
+          <span class="text-xs font-bold text-stone-800 block">Kamar Pemilik Kost</span>
+          <span class="text-[11px] text-stone-600 block mt-0.5">Tidak Untuk Disewakan</span>
+        </div>
+      </div>
+
+      <!-- Top Right: R-02 Red Bedroom + Yellow Bathrooms in East Sector -->
+      <div class="col-span-6 space-y-2">
+        
+        <div class="grid grid-cols-12 gap-2">
+          <!-- Elongated Red Box R-02 -->
+          <div onclick="openRoomModal('RA-02')" class="col-span-9 room-box p-2.5 rounded-xl border-2 border-[#E06550] bg-[#FDF2F0] hover:bg-[#FBE8E5] transition flex flex-col justify-between shadow-sm" data-status="Terisi" data-room-id="R-02">
+            <div class="flex items-center justify-between text-xs mb-1">
+              <span class="font-bold text-[#B83E2C]">RA-02</span>
+              <span class="px-1.5 py-0.5 rounded bg-stone-200 text-[9px] font-bold text-stone-700">TERISI</span>
+            </div>
+            <span class="text-xs font-bold text-stone-800 block">Kamar A-2</span>
+            <span class="text-[11px] text-stone-600 block">Rp 650rb/bln</span>
+          </div>
+
+          <!-- Yellow Box: Far Top-Right Corner Bathroom -->
+          <div class="col-span-3 p-2 rounded-xl border-2 border-[#DE9E36] bg-[#FEF9EC] text-center flex flex-col items-center justify-center">
+            <i class="fa-solid fa-shower text-[#DE9E36] text-xs mb-0.5"></i>
+            <span class="text-[9px] font-bold text-[#A66E14] block leading-tight">KM Belakang</span>
+          </div>
+        </div>
+
+        <!-- Yellow Box: Below R-02 Bathroom -->
+        <div class="grid grid-cols-12 gap-2">
+          <div class="col-span-7 p-1.5 rounded-lg border-2 border-[#DE9E36] bg-[#FEF9EC] text-center flex items-center justify-center gap-1.5">
+            <i class="fa-solid fa-toilet text-[#DE9E36] text-xs"></i>
+            <span class="text-[10px] font-bold text-[#A66E14]">KM Tengah</span>
+          </div>
+          <div class="col-span-5 p-1.5 rounded-lg border-2 border-[#DE9E36] bg-[#FEF9EC] text-center flex items-center justify-center gap-1">
+            <i class="fa-solid fa-shower text-[#DE9E36] text-xs"></i>
+            <span class="text-[10px] font-bold text-[#A66E14]">KM Depan</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- BOTTOM SECTION OF MAIN HOUSE: 3 RED BEDROOM BOXES -->
+    <div class="grid grid-cols-12 gap-3 items-stretch">
+      
+      <!-- Bottom-Left: Wide Red Box (R-03 - Deluxe dengan KM Dalam) -->
+      <div onclick="openRoomModal('RA-03')" class="col-span-6 room-box p-3 rounded-2xl border-2 border-[#E06550] bg-[#FDF2F0] hover:bg-[#FBE8E5] transition flex flex-col justify-between shadow-sm" data-status="Terisi" data-room-id="R-03">
+        <div>
+          <div class="flex items-center justify-between text-xs mb-1">
+            <span class="font-bold text-[#B83E2C]">RA-03</span>
+            <span class="px-1.5 py-0.5 rounded bg-stone-200 text-[9px] font-bold text-stone-700">TERISI</span>
+          </div>
+          <span class="text-xs font-bold text-stone-800 block">Kamar A-3 (Max 3 org)</span>
+        </div>
+        <div class="mt-2 pt-1.5 border-t border-[#E06550]/20 text-[10px] text-stone-600">
+          <span>Rp 800.000/bln (1 org)</span><hr>
+          <span>Rp 675.000/bln (2 org)</span><hr>
+          <span>Rp 600.000/bln (3 org)</span>
+        </div>
+      </div>
+      <!-- Contoh Tersedia
+      <div onclick="openRoomModal('R-03')" class="col-span-6 room-box p-3 rounded-2xl border-2 border-[#E06550] bg-[#FDF2F0] hover:bg-[#FBE8E5] transition flex flex-col justify-between shadow-sm" data-status="Tersedia" data-room-id="R-03">
+        <div>
+          <div class="flex items-center justify-between text-xs mb-1">
+            <span class="font-bold text-[#B83E2C]">RA-03</span>
+            <span class="px-1.5 py-0.5 rounded bg-emerald-600 text-[9px] font-bold text-white">TERSEDIA</span>
+          </div>
+          <span class="text-xs font-bold text-stone-800 block">Kamar A-3 (Max 3 org)</span>
+        </div>
+        <div class="mt-2 pt-1.5 border-t border-[#E06550]/20 text-[10px] text-stone-600">
+          <span>Rp 800.000/bln (1 org)</span><hr>
+          <span>Rp 675.000/bln (2 org)</span><hr>
+          <span>Rp 600.000/bln (3 org)</span>
+        </div>
+      </div>
+    -->
+
+      <!-- Bottom-Center: Red Box (R-04) -->
+      <div onclick="openRoomModal('RA-04')" class="col-span-3 room-box p-3 rounded-2xl border-2 border-[#E06550] bg-[#FDF2F0] hover:bg-[#FBE8E5] transition flex flex-col justify-between shadow-sm" data-status="Terisi" data-room-id="R-04">
+        <div>
+          <div class="flex items-center justify-between text-xs mb-1">
+            <span class="font-bold text-[#B83E2C]">RA-04</span>
+            <span class="px-1.5 py-0.5 rounded bg-stone-200 text-[9px] font-bold text-stone-700">TERISI</span>
+          </div>
+          <span class="text-xs font-bold text-stone-800 block mt-1">Kamar A-4</span>
+        </div>
+        <div class="mt-2 pt-1.5 border-t border-[#E06550]/20 text-[10px] text-stone-600">
+          <span>Rp 650.000/bln</span>
+        </div>
+      </div>
+
+      <!-- Bottom-Center: Red Box (R-05) -->
+      <div onclick="openRoomModal('RA-05')" class="col-span-3 room-box p-3 rounded-2xl border-2 border-[#E06550] bg-[#FDF2F0] hover:bg-[#FBE8E5] transition flex flex-col justify-between shadow-sm" data-status="Terisi" data-room-id="R-04">
+        <div>
+          <div class="flex items-center justify-between text-xs mb-1">
+            <span class="font-bold text-[#B83E2C]">RA-05</span>
+            <span class="px-1.5 py-0.5 rounded bg-stone-200 text-[9px] font-bold text-stone-700">TERISI</span>
+          </div>
+          <span class="text-xs font-bold text-stone-800 block mt-1">Kamar A-5</span>
+        </div>
+        <div class="mt-2 pt-1.5 border-t border-[#E06550]/20 text-[10px] text-stone-600">
+          <span>Rp 650.000/bln</span>
+        </div>
+      </div>
+
+      <!-- Bottom-Right: Red Box (R-05 & R-06 - Dekat Pintu Southeast) -->
+      <div class="col-span-4 grid grid-cols-2 gap-2">
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+            <!-- 3. BOTTOM ROW: PAVILION B & DAPUR BERSAMA -->
+            <div id="block-pavilion-b" class="grid grid-cols-12 gap-4 items-center">
+              <div class="col-span-8 relative rounded-2xl border-[2.5px] border-[#2E7D5B] bg-white p-3 shadow-sm">
+                <div class="absolute top-1/2 -right-3.5 -translate-y-1/2 z-20">
+                  <div class="door-arc-right shadow-sm"></div>
+                </div>
+                <div class="flex items-center justify-between text-xs mb-2">
+                  <span class="font-bold text-stone-800 flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#2E7D5B]"></span>
+                    Rumah C
+                  </span>
+                  <span class="text-[11px] text-stone-500 font-semibold">Sharing Listrik</span>
+                </div>
+                <div class="grid grid-cols-12 gap-2.5 items-stretch">
+                  <div class="col-span-3 p-2 rounded-xl border-2 border-[#DE9E36] bg-[#FEF9EC] flex flex-col items-center justify-center text-center">
+                    <i class="fa-solid fa-shower text-[#DE9E36] text-xs"></i>
+                    <span class="text-[10px] font-bold text-[#A66E14]">KM Belakang</span>
+                  </div>
+                  <!-- Contoh Tersedia
+                  <div onclick="openRoomModal('PB-01')"
+                    class="col-span-4 room-box p-2.5 rounded-xl border-2 border-[#E06550] bg-[#FDF2F0] hover:bg-[#FBE8E5] transition shadow-sm flex flex-col justify-between"
+                    data-status="Tersedia" data-room-id="PB-01">
+                    <div>
+                      <div class="flex items-center justify-between text-[11px] mb-0.5">
+                        <span class="font-bold text-[#B83E2C]">RC-01</span>
+                        <span class="px-1.5 py-0.2 rounded bg-emerald-600 text-[8px] font-bold text-white">TERSEDIA</span>
+                      </div>
+                      <span class="text-xs font-bold text-stone-800 block">Kamar C-1</span>
+                    </div>
+                    <span class="text-[10px] text-[#3A6FA8] font-bold block mt-1">Rp 650rb/bln</span>
+                  </div>
+                -->
+                  <div onclick="openRoomModal('PB-01')"
+                    class="col-span-4 room-box p-2.5 rounded-xl border-2 border-[#E06550] bg-[#FDF2F0] hover:bg-[#FBE8E5] transition shadow-sm flex flex-col justify-between"
+                    data-status="Terisi" data-room-id="PB-01">
+                    <div>
+                      <div class="flex items-center justify-between text-[11px] mb-0.5">
+                        <span class="font-bold text-[#B83E2C]">RC-01</span>
+                        <span class="px-1.5 py-0.2 rounded bg-stone-200 text-[8px] font-bold text-stone-700">TERISI</span>
+                      </div>
+                      <span class="text-xs font-bold text-stone-800 block">Kamar C-1</span>
+                    </div>
+                    <span class="text-[10px] text-[#3A6FA8] font-bold block mt-1">Rp 650rb/bln</span>
+                  </div>
+
+                  <div onclick="openRoomModal('PB-02')"
+                    class="col-span-4 room-box p-2.5 rounded-xl border-2 border-[#E06550] bg-[#FDF2F0] hover:bg-[#FBE8E5] transition shadow-sm flex flex-col justify-between"
+                    data-status="Terisi" data-room-id="PB-02">
+                    <div>
+                      <div class="flex items-center justify-between text-[11px] mb-0.5">
+                        <span class="font-bold text-[#B83E2C]">RC-02</span>
+                        <span class="px-1.5 py-0.2 rounded bg-stone-200 text-[8px] font-bold text-stone-700">TERISI</span>
+                      </div>
+                      <span class="text-xs font-bold text-stone-800 block">Kamar C-2</span>
+                    </div>
+                    <span class="text-[10px] text-stone-600 block mt-1">Rp 650rb/bln</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Standalone Purple Block: Dapur Bersama Komunal -->
+              <div onclick="openCommunalKitchenModal()"
+                class="col-span-4 cursor-pointer group p-3.5 rounded-2xl border-2 border-[#8A6494] bg-[#F8F2F9] hover:bg-[#F0E6F3] transition shadow-sm">
+                <div class="flex items-center justify-between text-xs mb-1">
+                  <span class="font-bold text-[#6B4675] flex items-center gap-1.5">
+                    <i class="fa-solid fa-kitchen-set"></i>
+                    DAPUR BERSAMA
+                  </span>
+                  <span class="text-[9px] bg-purple-200 text-purple-900 font-bold px-1.5 py-0.2 rounded">GRATIS</span>
+                </div>
+                <p class="text-[11px] text-stone-600 leading-tight">
+                  Kompor, Gas (Sharing), Kulkas, dkk.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- DIRECT WHATSAPP ACTION FOOTER -->
+      <div
+        class="mt-8 p-6 rounded-3xl bg-white border border-[#D0E3EF] shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>
+          <h3 class="text-base font-bold text-stone-900">Ingin Survei Kamar Langsung ke Komplek Batan Lama A5?</h3>
+          <p class="text-xs text-stone-600 mt-0.5">Pemilik Kost berdomisili langsung di lokasi. Hubungi via WhatsApp untuk janjian atau tanya ketersediaan unit.</p>
+        </div>
+        <a href="https://wa.me/6289669909373?text=Halo%20Pemilik%20Kost%20Bunda%20John,%20saya%20tertarik%20tanya%20ketersediaan%20kamar."
+          target="_blank"
+          class="px-6 py-3 rounded-2xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-sm shadow-sm transition active:scale-95 flex items-center gap-2 flex-shrink-0">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          Chat WhatsApp (0896-6990-9373)
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER (Loaded from footer.html) -->
+  <div id=footer-placeholder></div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="shared.js"></script>
+  <script>
+    function filterFloorplan(filter) {
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-filter') === filter) {
+          btn.className = 'filter-btn active px-3.5 py-1.5 rounded-xl bg-[#3A6FA8] text-white font-semibold shadow-sm transition';
+        } else {
+          btn.className = 'filter-btn px-3.5 py-1.5 rounded-xl bg-white border border-[#D0E3EF] text-stone-700 hover:border-stone-400 transition';
+        }
+      });
+
+      const rooms = document.querySelectorAll('.room-box');
+      rooms.forEach(room => {
+        const status = room.getAttribute('data-status');
+        if (filter === 'all') {
+          room.style.opacity = '1';
+          room.style.filter = 'none';
+        } else if (filter === 'available') {
+          if (status === 'Tersedia') {
+            room.style.opacity = '1';
+            room.style.filter = 'none';
+          } else {
+            room.style.opacity = '0.25';
+            room.style.filter = 'grayscale(100%)';
+          }
+        } else if (filter === 'occupied') {
+          if (status === 'Terisi') {
+            room.style.opacity = '1';
+            room.style.filter = 'none';
+          } else {
+            room.style.opacity = '0.25';
+            room.style.filter = 'grayscale(100%)';
+          }
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

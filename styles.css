@@ -1,0 +1,145 @@
+/* ==========================================================================
+   Kost Bunda John - Clean Blue & Green Design System
+   Warna: Steel Blue, Forest Green — Sesuai Logo Kost Bunda John
+   Anti-Jereng • Profesional • Ramah UI/UX & Calming
+   ========================================================================== */
+
+:root {
+  /* Blue & Green Color Palette (sesuai logo Kost Bunda John) */
+  --bg-page: #F4F8FB;          /* Soft blue-tinted background */
+  --bg-card: #FFFFFF;          /* Clean white */
+  --bg-surface: #EBF3F8;       /* Light blue surface */
+  --bg-subtle: #DDE9F0;        /* Muted blue separator */
+  
+  --text-main: #1A2B38;        /* Deep slate blue */
+  --text-muted: #4A6070;       /* Calm readable medium tone */
+  --text-subtle: #7A9BAD;      /* Light label tone */
+
+  --color-primary: #3A6FA8;    /* Logo steel blue */
+  --color-primary-soft: #E8F0FA;
+  --color-sage: #3D7858;       /* Logo forest green */
+  --color-sage-soft: #E8F5EE;
+  --color-amber: #C98A2C;      /* Soft warm amber */
+  --color-amber-soft: #FDF7EB;
+  --color-slate-blue: #4A7A96; /* Soft muted slate blue */
+  --color-slate-soft: #EDF3F7;
+  --color-mauve: #5A7FA8;      /* Calm muted blue */
+  --color-mauve-soft: #EDF3FA;
+
+  --border-light: #D0E3EF;
+  --border-medium: #B8D0E0;
+
+  --shadow-sm: 0 1px 3px rgba(30, 60, 90, 0.06);
+  --shadow-md: 0 4px 16px -2px rgba(30, 60, 90, 0.08), 0 2px 6px -1px rgba(30, 60, 90, 0.05);
+  --shadow-lg: 0 12px 30px -4px rgba(30, 60, 90, 0.10), 0 4px 10px -2px rgba(30, 60, 90, 0.05);
+}
+
+/* Base Body Setup */
+body {
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection Color */
+::selection {
+  background-color: #C5D8EF;
+  color: #1A2B38;
+}
+
+/* Soft Architectural Denah Canvas Grid (Like Clean Drafting / Tablet Paper) */
+.bg-floorplan-grid {
+  background-color: #F4F8FB;
+  background-image: 
+    linear-gradient(rgba(100, 150, 180, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100, 150, 180, 0.12) 1px, transparent 1px),
+    linear-gradient(rgba(100, 150, 180, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100, 150, 180, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px, 40px 40px, 10px 10px, 10px 10px;
+  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
+
+/* Floorplan Wall Boundary - Sketch Green Lines */
+.floorplan-green-wall {
+  border: 2.5px solid #2E7D5B;
+  border-radius: 18px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 12px rgba(46, 125, 91, 0.05);
+}
+
+/* Interactive Room Elements (Red Bedroom Sketch Box) */
+.room-box {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.room-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px -2px rgba(224, 101, 80, 0.25);
+  border-color: #C04834 !important;
+}
+
+/* Pintu Swing Arcs (Sketch Blue Semicircles) */
+.door-arc-top {
+  width: 24px;
+  height: 14px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border-top: 2.5px solid #2B6CB0;
+  border-left: 2px solid #2B6CB0;
+  border-right: 2px solid #2B6CB0;
+  background-color: rgba(235, 244, 255, 0.9);
+}
+
+.door-arc-side {
+  width: 14px;
+  height: 24px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-left: 2.5px solid #2B6CB0;
+  border-top: 2px solid #2B6CB0;
+  border-bottom: 2px solid #2B6CB0;
+  background-color: rgba(235, 244, 255, 0.9);
+}
+
+.door-arc-right {
+  width: 14px;
+  height: 24px;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  border-right: 2.5px solid #2B6CB0;
+  border-top: 2px solid #2B6CB0;
+  border-bottom: 2px solid #2B6CB0;
+  background-color: rgba(235, 244, 255, 0.9);
+}
+
+.door-arc-bottom {
+  width: 24px;
+  height: 14px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  border-bottom: 2.5px solid #2B6CB0;
+  border-left: 2px solid #2B6CB0;
+  border-right: 2px solid #2B6CB0;
+  background-color: rgba(235, 244, 255, 0.9);
+}
+
+/* Custom Soft Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F8FB;
+}
+::-webkit-scrollbar-thumb {
+  background: #B8D0E0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8AADC5;
+}

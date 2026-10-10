@@ -1,0 +1,70 @@
+﻿<!-- ========================================================
+     KOST BUNDA JOHN - REUSABLE NAVBAR COMPONENT
+     Links: Beranda, Denah Rumah, Tipe Kamar, Artikel & Tips, Lokasi & Kontak
+     ======================================================== -->
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-[#D0E3EF]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-20 h-20 rounded-2xl bg-[#ffffff] flex items-center justify-center text-white shadow-sm">
+          <img src="assets\images\Logo.png">
+        </div>
+        <div>
+          <span class="text-lg font-bold tracking-tight text-[#1A2B38] block leading-tight">
+            KOST BUNDA JOHN
+          </span>
+          <span class="text-xs font-mono font-medium tracking-wider text-[#3A6FA8] block">
+            KOMP. BATAN LAMA A-5
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links (Fasilitas diganti Artikel) -->
+      <nav class="hidden md:flex items-center gap-2" id="desktop-nav-links">
+        <a href="index.html" data-nav="index.html" class="nav-item px-3.5 py-2 rounded-xl text-sm font-medium text-stone-600 hover:text-stone-900 hover:bg-stone-100 transition">
+          Beranda
+        </a>
+        <a href="denah.html" data-nav="denah.html" class="nav-item px-3.5 py-2 rounded-xl text-sm font-medium text-stone-600 hover:text-stone-900 hover:bg-stone-100 transition">
+          Denah Rumah
+        </a>
+        <a href="kamar.html" data-nav="kamar.html" class="nav-item px-3.5 py-2 rounded-xl text-sm font-medium text-stone-600 hover:text-stone-900 hover:bg-stone-100 transition">
+          Tipe Kamar
+        </a>
+        <a href="artikel.html" data-nav="artikel.html" class="nav-item px-3.5 py-2 rounded-xl text-sm font-medium text-stone-600 hover:text-stone-900 hover:bg-stone-100 transition">
+          Artikel & Tips
+        </a>
+        <a href="kontak.html" data-nav="kontak.html" class="nav-item px-3.5 py-2 rounded-xl text-sm font-medium text-stone-600 hover:text-stone-900 hover:bg-stone-100 transition">
+          Lokasi & Kontak
+        </a>
+      </nav>
+
+      <!-- CTA Action Button -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="https://wa.me/6289669909373?text=Halo%20Pengelola%20Kost%20Batan%20Lama%20A5,%20saya%20tertarik%20tanya%20ketersediaan%20kamar." target="_blank" class="px-5 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-sm shadow-sm transition active:scale-95 flex items-center gap-2">
+          <i class="fa-brands fa-whatsapp text-base"></i> Tanya WhatsApp
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="flex md:hidden">
+        <button id="mobile-menu-btn" aria-label="Buka Menu" class="p-2.5 rounded-xl bg-stone-100 border border-stone-200 text-stone-700">
+          <i class="fa-solid fa-bars text-lg"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-[#D0E3EF] bg-white px-4 pt-3 pb-6 space-y-2">
+    <a href="index.html" data-nav="index.html" class="mobile-nav-item block px-3 py-2 rounded-lg text-sm font-medium text-stone-700 hover:bg-stone-50">Beranda</a>
+    <a href="denah.html" data-nav="denah.html" class="mobile-nav-item block px-3 py-2 rounded-lg text-sm font-medium text-stone-700 hover:bg-stone-50">Denah Rumah</a>
+    <a href="kamar.html" data-nav="kamar.html" class="mobile-nav-item block px-3 py-2 rounded-lg text-sm font-medium text-stone-700 hover:bg-stone-50">Tipe Kamar & Tarif</a>
+    <a href="artikel.html" data-nav="artikel.html" class="mobile-nav-item block px-3 py-2 rounded-lg text-sm font-medium text-stone-700 hover:bg-stone-50">Artikel & Tips</a>
+    <a href="kontak.html" data-nav="kontak.html" class="mobile-nav-item block px-3 py-2 rounded-lg text-sm font-medium text-stone-700 hover:bg-stone-50">Lokasi & Kontak WhatsApp</a>
+    <a href="https://wa.me/6289669909373" target="_blank" class="block text-center mt-3 py-2.5 rounded-xl bg-[#25D366] text-white font-bold text-sm">
+      <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp: 0896-6990-9373
+    </a>
+  </div>
+</header>
