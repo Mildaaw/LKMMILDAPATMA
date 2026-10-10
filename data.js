@@ -18,9 +18,9 @@ const KOST_INFO = {
   basePrice: "Rp 650.000 / bulan",
   totalRooms: 15,
   images: {
-    hero: "assets/images/hero.jpg",
-    kamar: "assets/images/kamar.jpg",
-    dapur: "assets/images/dapur.jpg"
+    hero: "hero.jpg",
+    kamar: "kamar.jpg",
+    dapur: "dapur.jpg"
   },
   
   // Perbandingan Jarak Strategis & Waktu Tempuh
@@ -124,7 +124,7 @@ const ROOMS_DATA = [
       "Listrik Token Mandiri (Bayar Sendiri)"
     ],
     description: "Unit kontrakan mandiri di deretan depan. Pintu masuk tersendiri, KM dalam pribadi. Listrik token mandiri sesuai pemakaian.",
-    image: "assets/images/kamar.jpg"
+    image: "kamar.jpg"
   },
   {
     id: "KT-02",
@@ -151,7 +151,7 @@ const ROOMS_DATA = [
       "Listrik Token Mandiri (Bayar Sendiri)"
     ],
     description: "Unit kontrakan privat deretan depan. Listrik token mandiri masing-masing. Saat ini sedang terisi.",
-    image: "assets/images/kamar.jpg"
+    image: "kamar.jpg"
   },
   {
     id: "KT-03",
@@ -178,7 +178,7 @@ const ROOMS_DATA = [
       "Listrik Token Mandiri (Bayar Sendiri)"
     ],
     description: "Unit kontrakan privat mandiri siap huni. Listrik token bayar sendiri sesuai pemakaian.",
-    image: "assets/images/kamar.jpg"
+    image: "kamar.jpg"
   },
   {
     id: "KT-04",
@@ -205,7 +205,7 @@ const ROOMS_DATA = [
       "Listrik Token Mandiri (Bayar Sendiri)"
     ],
     description: "Unit kontrakan privat sudut deretan depan. Listrik token mandiri bayar sendiri. Saat ini sedang terisi.",
-    image: "assets/images/kamar.jpg"
+    image: "kamar.jpg"
   },
 
   // 2. CENTER AREA — Rumah Utama (R1 - R6)
@@ -228,7 +228,7 @@ const ROOMS_DATA = [
     bathroomType: "KM Bersama",
     features: ["Kasur Single", "Lemari Pakaian", "Meja Belajar", "Kipas Angin", "Listrik & Wi-Fi All-In"],
     description: "Kamar R2 Rumah A Utama. Harga sudah ALL-IN listrik + Wi-Fi. Saat ini sedang dihuni.",
-    image: "assets/images/kamar.jpg"
+    image: "kamar.jpg"
   },
   {
     id: "RA-03",
@@ -247,7 +247,7 @@ const ROOMS_DATA = [
     bathroomType: "KM Bersama",
     features: ["Kasur Single atau King", "Lemari Pakaian", "Meja Belajar", "Kipas Angin", "Listrik & Wi-Fi All-In"],
     description: "Bisa diisi MAX 3 Orang. Dengan Harga Rp 800.000/bln (1 org), 675.000/bln (2 org), 600.000/bln (3 org)",
-    image: "assets/images/kamar.jpg"
+    image: "kamar.jpg"
   },
   {
     id: "RA-04",
@@ -266,7 +266,7 @@ const ROOMS_DATA = [
     bathroomType: "KM Bersama",
     features: ["Kasur Single", "Lemari Pakaian", "Meja Belajar", "Kipas Angin", "Listrik & Wi-Fi All-In"],
     description: "Kamar A-4 Rumah Utama. Harga ALL-IN listrik + Wi-Fi. Saat ini sedang dihuni.",
-    image: "assets/images/kamar.jpg"
+    image: "kamar.jpg"
   },
   {
     id: "RA-05",
@@ -285,7 +285,7 @@ const ROOMS_DATA = [
     bathroomType: "KM Bersama",
     features: ["Kasur Single", "Lemari Pakaian", "Meja Belajar", "Kipas Angin", "Listrik & Wi-Fi All-In"],
     description: "Kamar A-5 Rumah Utama. Harga ALL-IN listrik + Wi-Fi. Saat ini terisi.",
-    image: "assets/images/kamar.jpg"
+    image: "kamar.jpg"
   },
 
   // 3. BOTTOM-LEFT AREA — Rumah B 
@@ -307,7 +307,7 @@ const ROOMS_DATA = [
     bathroomType: "KM Bersama",
     features: ["Akses Dapur Internal", "Kasur Single", "Lemari", "Meja & Kursi", "Kipas Angin", "⚡ Listrik Sharing"],
     description: "Kamar Rumah B-1. Listrik sharing/patungan bersama penghuni. Saat ini terisi.",
-    image: "assets/images/kamar.jpg"
+    image: "kamar.jpg"
   },
   {
     id: "RB-02",
@@ -326,7 +326,7 @@ const ROOMS_DATA = [
     bathroomType: "KM Khusus Rumah B",
     features: ["Akses Dapur Internal", "Kasur Single", "Lemari", "Meja & Kursi", "Kipas Angin", "⚡ Listrik Sharing"],
     description: "Kamar Rumah B-2. Kamar dengan dapur mini internal. Listrik sharing/patungan bersama.",
-    image: "assets/images/kamar.jpg"
+    image: "kamar.jpg"
   },
   {
     id: "RB-03",
@@ -345,7 +345,7 @@ const ROOMS_DATA = [
     bathroomType: "KM Bersama",
     features: ["Akses Dapur Internal", "Kasur Single", "Lemari", "Meja & Kursi", "Kipas Angin", "⚡ Listrik Sharing"],
     description: "Kamar Rumah B-3. Listrik sharing bersama penghuni. Saat ini sedang terisi.",
-    image: "assets/images/kamar.jpg"
+    image: "kamar.jpg"
   },
 
   // 4. BOTTOM-CENTER — Rumah C / 
@@ -376,7 +376,7 @@ const ROOMS_DATA = [
       "⚡ Listrik Sharing"
     ],
     description: "Kamar Rumah C-1. Rumah 2 kamar, dekat Dapur Bersama. Listrik sharing/patungan bersama sesama penghuni.",
-    image: "assets/images/kamar.jpg"
+    image: "kamar.jpg"
   },
   {
     id: "RC-02",
@@ -404,7 +404,7 @@ const ROOMS_DATA = [
       "⚡ Listrik Sharing"
     ],    
     description: "Kamar Rumah C-2. Listrik sharing bersama penghuni. Saat ini sedang terisi.",
-    image: "assets/images/kamar.jpg"
+    image: "kamar.jpg"
   }
 ];
 
