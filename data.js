@@ -429,6 +429,251 @@ const COMMUNAL_FACILITIES = {
 // Artikel SEO Lengkap & Terstruktur (Untuk Tugas Optimasi SEO)
 const SEO_ARTICLES = [
   {
+    id: "when-ya-bisa-bangun-pagi-tanpa-panik-in-this-economy",
+    slug: "when-ya-bisa-bangun-pagi-tanpa-panik-in-this-economy",
+    title: "When Ya Bisa Bangun Pagi Tanpa Panik? (In This Economy, Wajib Pindahnya ke Sini!)",
+    category: "Gaya Hidup & Solusi Kost",
+    date: "10 Oktober 2026",
+    readTime: "4 menit baca",
+    author: "Anisa Mildawati",
+    image: "post-bangun-pagi.jpg",
+    originalUrl: "http://www.patmina.my.id/2026/10/when-ya-bisa-bangun-pagi-tanpa-panik-in.html",
+    excerpt: "In this economy, pengeluaran harus diatur seketat mungkin tapi kesehatan mental jangan dikorbanin. Mau bangun jam 7 pagi dengan santai tanpa panik macet ke BRIN Serpong? Solusinya move on ke Kost Bunda John Komplek Batan Lama No. A-5!",
+    keywords: "when ya bisa bangun pagi, in this economy kost serpong, kost dekat brin kst serpong, kost komplek batan lama a5, kost magang puspiptek serpong, kost murah tangerang selatan, sewa kost bebas macet serpong",
+    metaDescription: "In this economy, jangan korbankan kesehatan mental! Nikmati bangun pagi santai 3 menit ke BRIN KST Serpong di Kost Bunda John Komplek Batan Lama No. A5 mulai 650rb/bulan all-in.",
+    content: `
+      <div class="my-4 rounded-2xl overflow-hidden border border-[#D0E3EF] shadow-sm">
+        <img src="post-bangun-pagi.jpg" alt="Meme mahasiswa magang dan peneliti BRIN melirik Kost Bunda John Komplek Batan Lama A5 Serpong" class="w-full h-auto object-cover max-h-96 mx-auto">
+        <p class="text-xs text-stone-500 bg-stone-50 p-2.5 text-center border-t border-[#D0E3EF] italic">
+          Bisa bangun pagi santai dan tiba di kantor dalam 3 menit: Impian pejuang magang & peneliti BRIN KST Serpong yang jadi kenyataan di Kost Bunda John.
+        </p>
+      </div>
+
+      <p class="lead font-medium text-stone-800 text-base leading-relaxed">
+        <strong>In this economy</strong>, pengeluaran bulanan memang harus diatur seketat mungkin. Tapi ingat, <em>kesehatan mental dan kebugaran fisik juga nggak boleh dikorbankan!</em>
+      </p>
+
+      <p>Coba deh bayangkan sejenak skenario indah ini: kamu bisa bangun tidur jam 07.00 pagi dengan tenang, sempat menyeduh secangkir kopi atau teh hangat, menikmati sejuknya udara pagi, lalu sarapan tanpa harus melotot ke arah jam dinding sambil deg-degan jantung serasa mau copot. Terus, <strong>when ya</strong> bisa berangkat magang, kuliah, atau kerja tanpa perlu mandi peluh dingin gara-gara terjebak kemacetan horor di jalanan?</p>
+
+      <h2 class="text-lg sm:text-xl font-bold text-stone-900 mt-6 mb-2">Realita Pejuang Magang & Peneliti di Kawasan BRIN Puspiptek Serpong</h2>
+      <p>Buat para pejuang magang, mahasiswa tingkat akhir, peneliti muda, hingga karyawan yang aktivitas hariannya berpusat di kawasan <strong>Kawasan Sains dan Teknologi (KST) B.J. Habibie BRIN</strong> dan <strong>PUSPIPTEK Serpong</strong>, impian hidup santai seperti itu sebenarnya <strong>bukan cuma angan-angan belaka</strong>.</p>
+      
+      <p>Kalau lokasi tempat tinggal atau kosan kamu sekarang masih berada di "ujung dunia" yang butuh waktu 30 sampai 50 menit perjalanan menembus padatnya Jalan Raya Puspiptek, ya wajar banget kalau setiap hari cuma bisa ngebatin: <em>"When ya hidupku bisa lebih santai dan nggak stres di jalan?"</em>.</p>
+
+      <div class="my-6 rounded-2xl overflow-hidden border border-[#D0E3EF] shadow-sm bg-stone-50 p-4 text-center">
+        <img src="post-meme-pilihan-kosan.jpg" alt="Meme perbandingan pilihan kosan anak magang BRIN: Kost Bunda Batan Lama A5 yang strategis dan tenang selalu jadi pilihan utama" class="max-w-md w-full h-auto mx-auto rounded-xl shadow-sm border border-stone-200">
+        <p class="text-xs text-stone-600 mt-3 font-medium italic">
+          Meme Realita Anak Magang: Kos jauh di ujung dunia bikin lelah jiwa raga, padahal ada Kost Bunda John yang tinggal jalan santai ke area BRIN/PUSPIPTEK!
+        </p>
+      </div>
+
+      <h2 class="text-lg sm:text-xl font-bold text-stone-900 mt-6 mb-2">Solusinya Gampang: Move On ke Kost Bunda John Komplek Batan Lama A5!</h2>
+      <p>Daripada setiap hari mengeluh capek di jalan dan stamina keburu habis sebelum tugas riset dimulai, solusi terbaiknya adalah <strong>move on ke Kost Bunda John</strong> yang berlokasi super strategis di <strong>Komplek Batan Lama No. A-5, Kademangan, Kec. Setu / Serpong, Tangerang Selatan</strong>!</p>
+
+      <p class="mt-2 font-medium">Kenapa tempat ini pas banget buat mewujudkan resolusi <em>when ya</em> versi kamu?</p>
+
+      <div class="space-y-4 my-5">
+        <div class="p-4 rounded-2xl bg-[#F4F8FB] border border-[#D0E3EF] shadow-sm">
+          <h3 class="text-sm sm:text-base font-bold text-[#1A2B38] mb-1 flex items-center gap-2">
+            <span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 text-xs flex items-center justify-center font-bold">1</span>
+            Dekat Banget ke Lokasi Aktivitas (Hanya 1.2 km / 3-5 Menit!)
+          </h3>
+          <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+            Karena posisinya berbatasan langsung dengan perimeter kawasan BRIN KST Serpong, <em>when ya</em> mau on-time ke tempat magang nggak perlu lagi pasang 10 alarm berturut-turut atau balapan lawan truk di jalan raya. Mau naik motor, sepeda santai, atau bahkan jalan kaki pagi pun sangat memungkinkan!
+          </p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-[#F4F8FB] border border-[#D0E3EF] shadow-sm">
+          <h3 class="text-sm sm:text-base font-bold text-[#1A2B38] mb-1 flex items-center gap-2">
+            <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 text-xs flex items-center justify-center font-bold">2</span>
+            Lingkungan Komplek yang Tenang, Asri, & Bebas Bising
+          </h3>
+          <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+            Berada di dalam lingkungan pemukiman Komplek Batan Lama yang tertib dan rindang. Suasananya tenang bikin istirahat malam jadi berkualitas (deep sleep tanpa raungan knalpot bising). Saat harus lembur menulis laporan riset, jurnal ilmiah, atau skripsi kampus, kamu bisa fokus 100% tanpa distraksi.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-[#F4F8FB] border border-[#D0E3EF] shadow-sm">
+          <h3 class="text-sm sm:text-base font-bold text-[#1A2B38] mb-1 flex items-center gap-2">
+            <span class="w-6 h-6 rounded-full bg-amber-100 text-amber-700 text-xs flex items-center justify-center font-bold">3</span>
+            Dompet Aman, Pikiran Tenang (Mulai Rp 650.000 / Bulan)
+          </h3>
+          <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+            Di saat rata-rata harga sewa kost di BSD City mencapai 1.5 - 2.5 juta per bulan, Kost Bunda John menawarkan opsi tarif terjangkau mulai <strong>Rp 650.000/bulan</strong> yang sudah mencakup fasilitas esensial. Informasi fasilitas dan ketentuannya transparan dari awal, jadi keuangan kamu <em>in this economy</em> tetap terkontrol rapi tanpa boncos!
+          </p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-[#F4F8FB] border border-[#D0E3EF] shadow-sm">
+          <h3 class="text-sm sm:text-base font-bold text-[#1A2B38] mb-1 flex items-center gap-2">
+            <span class="w-6 h-6 rounded-full bg-purple-100 text-purple-700 text-xs flex items-center justify-center font-bold">4</span>
+            Fasilitas Dapur Bersama Bikin Pengeluaran Makin Irit
+          </h3>
+          <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+            Tersedia Dapur Bersama yang dilengkapi kompor gas, kulkas penyimpanan, wastafel cuci piring, dan dispenser air galon gratis. Bisa masak makanan favorit sendiri atau bikin kopi kapan saja, hemat pengeluaran makan hingga Rp 500.000 - Rp 800.000 setiap bulannya.
+          </p>
+        </div>
+      </div>
+
+      <h2 class="text-lg sm:text-xl font-bold text-stone-900 mt-6 mb-2">Tabel Perbandingan: Kost Jauh vs Kost Bunda John Batan Lama</h2>
+      <div class="overflow-x-auto my-4">
+        <table class="w-full text-left text-xs border-collapse border border-[#D0E3EF] rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-[#EEF5FA] text-[#1A2B38]">
+              <th class="p-3 border border-[#D0E3EF] font-bold">Parameter</th>
+              <th class="p-3 border border-[#D0E3EF] font-bold text-red-700">Kost Jauh / Pinggiran Jalan Raya</th>
+              <th class="p-3 border border-[#D0E3EF] font-bold text-emerald-800">Kost Bunda John Batan Lama A5</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-[#D0E3EF] text-stone-700">
+            <tr>
+              <td class="p-3 border border-[#D0E3EF] font-semibold">Waktu Tempuh ke BRIN</td>
+              <td class="p-3 border border-[#D0E3EF]">30 - 50 menit (macet parah)</td>
+              <td class="p-3 border border-[#D0E3EF] font-bold text-emerald-700">3 - 5 menit (1.2 km bebas macet)</td>
+            </tr>
+            <tr>
+              <td class="p-3 border border-[#D0E3EF] font-semibold">Jam Bangun Pagi</td>
+              <td class="p-3 border border-[#D0E3EF]">05.30 pagi (panik & terburu-buru)</td>
+              <td class="p-3 border border-[#D0E3EF] font-bold text-emerald-700">07.00 pagi (santai, sempat ngopi)</td>
+            </tr>
+            <tr>
+              <td class="p-3 border border-[#D0E3EF] font-semibold">Ongkos Transport Bulanan</td>
+              <td class="p-3 border border-[#D0E3EF]">Rp 400.000 - Rp 750.000 (ojol/bensin)</td>
+              <td class="p-3 border border-[#D0E3EF] font-bold text-emerald-700">Rp 30.000 - Rp 50.000 (sangat hemat)</td>
+            </tr>
+            <tr>
+              <td class="p-3 border border-[#D0E3EF] font-semibold">Suasana Istirahat</td>
+              <td class="p-3 border border-[#D0E3EF]">Bising suara truk & motor pinggir jalan</td>
+              <td class="p-3 border border-[#D0E3EF] font-bold text-emerald-700">Tenang, asri di dalam komplek perumahan</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-lg sm:text-xl font-bold text-stone-900 mt-6 mb-2">Jangan Cuma Ngebatin, Yuk Wujudkan Sekarang!</h2>
+      <p>Daripada cuma bisa iri ngelihat rekan magang lain yang bisa berangkat santai tanpa stres, mending langsung buktikan sendiri kenyamanannya. Kuota kamar di kawasan dekat BRIN Serpong selalu jadi rebutan setiap pergantian semester magang.</p>
+
+      <div class="p-4 rounded-2xl bg-[#F4F8FB] border border-[#D0E3EF] space-y-2 text-xs sm:text-sm my-4">
+        <p class="font-bold text-[#1A2B38]">Rekomendasi Langkah Selanjutnya:</p>
+        <ul class="list-disc pl-5 space-y-1 text-stone-600">
+          <li>Lihat pembagian layout unit kamar di <a href="denah.html" class="text-[#3A6FA8] font-bold hover:underline">Denah Rumah Interaktif</a>.</li>
+          <li>Ketahui rincian fasilitas masing-masing unit di <a href="kamar.html" class="text-[#3A6FA8] font-bold hover:underline">Katalog Tipe Kamar</a>.</li>
+          <li>Petakan rute akurat melalui <a href="https://maps.app.goo.gl/HtAMS4VSvMruzY4Q7" target="_blank" class="text-[#3A6FA8] font-bold hover:underline">Google Maps Kost Bunda Batan Lama A5</a>.</li>
+          <li>Baca versi postingan aslinya di blog <a href="http://www.patmina.my.id/2026/10/when-ya-bisa-bangun-pagi-tanpa-panik-in.html" target="_blank" class="text-[#3A6FA8] font-bold hover:underline">patmina.my.id</a>.</li>
+        </ul>
+      </div>
+    `
+  },
+  {
+    id: "kost-gratis-se-tangerang-selatan-iya-beneran-tapi",
+    slug: "kost-gratis-se-tangerang-selatan-iya-beneran-tapi",
+    title: "Kost Gratis Se-Tangerang Selatan? Iya Beneran, Tapi.. (Fakta & Tips Hemat)",
+    category: "Fakta & Promo Kost",
+    date: "09 Oktober 2026",
+    readTime: "4 menit baca",
+    author: "Anisa Mildawati",
+    image: "post-kost-gratis.jpg",
+    originalUrl: "http://www.patmina.my.id/2026/10/tentang-kami-kost-bunda-batan-lama-a5.html",
+    excerpt: "Mendengar penawaran Kost Gratis Se-Tangerang Selatan pasti langsung bikin kaget dan penasaran! Tenang, jangan salah paham. Simak fakta fasilitas gratis survei, konsultasi, dan tips anti-boncos di Serpong.",
+    keywords: "kost gratis tangerang selatan, survei kost gratis serpong, kost bunda batan lama a5, kost murah dekat brin serpong, kost puspiptek setu, kontrakan murah tangerang selatan, sewa kamar hemat serpong",
+    metaDescription: "Penasaran penawaran kost gratis se-Tangerang Selatan? Simak fakta fasilitas gratis survei sepuasnya, konsultasi rute, dan tips hemat tinggal dekat BRIN Serpong.",
+    content: `
+      <div class="my-4 rounded-2xl overflow-hidden border border-[#D0E3EF] shadow-sm bg-stone-50 p-4 text-center">
+        <img src="post-kost-gratis.jpg" alt="Poster Kost Gratis Se-Tangerang Selatan - Fasilitas Survei & Konsultasi Gratis di Kost Bunda John Komplek Batan Lama A5" class="max-w-xs w-full h-auto mx-auto rounded-xl shadow-md border border-stone-200">
+        <p class="text-xs text-stone-600 mt-3 font-medium italic">
+          Poster Resmi Kost Bunda Batan Lama A5: Khusus anak magang & peneliti BRIN. Gratis survei lokasi, konsultasi kamar, dan panduan rute!
+        </p>
+      </div>
+
+      <p class="lead font-medium text-stone-800 text-base leading-relaxed">
+        Mendengar penawaran <strong>Kost Gratis Se-Tangerang Selatan</strong> pasti langsung bikin mata melotot kaget bercampur penasaran!
+      </p>
+
+      <p>Apalagi buat kalangan mahasiswa perantau, peneliti muda, maupun anak magang yang saldo dompetnya makin menipis menjelang akhir bulan. Siapa pun pasti pengin menghemat pengeluaran tempat tinggal kalau memang ada kesempatan emas, bukan?</p>
+
+      <h2 class="text-lg sm:text-xl font-bold text-stone-900 mt-6 mb-2">Eits, Tenang Dulu Ya.. Jangan Sampai Salah Paham!</h2>
+      <p>Biar tidak ada salah pengertian, maksud <strong>"gratis"</strong> di sini adalah <strong>gratis survei lokasi sepuasnya, gratis konsultasi ketersediaan kamar, dan gratis tanya-tanya rute perjalanan</strong> tanpa dipungut biaya sepeser pun oleh pengelola Kost Bunda John!</p>
+
+      <p>Di luar sana, sering kali calon penghuni dipersulit oleh perantara atau calo kost yang meminta biaya administrasi pendaftaran survei. Di Kost Bunda John, Anda bisa bertanya apa saja, meminta foto/video kamar terbaru, hingga survei langsung ke lokasi secara <strong>100% Cuma-Cuma</strong>.</p>
+
+      <h2 class="text-lg sm:text-xl font-bold text-stone-900 mt-6 mb-2">Waspada Jebakan "Sewa Murah di Awal, Malah Boncos di Ongkos"</h2>
+      <p>Mencari tempat tinggal sementara di daerah Serpong dan sekitarnya—khususnya bagi kamu yang punya mobilitas harian di kawasan <strong>BRIN KST B.J. Habibie</strong> atau <strong>PUSPIPTEK</strong>—memang butuh perhitungan matang agar uang saku tidak habis di jalan.</p>
+
+      <p>Banyak calon penghuni yang tergiur iming-iming sewa kamar murah Rp 400.000 - Rp 500.000 di pelosok. Namun saat sudah ditempati, ternyata jaraknya 8 kilometer di dalam perkampungan padat tanpa akses angkutan umum. Akibatnya:</p>
+
+      <ul class="space-y-2 my-3 pl-2">
+        <li class="flex items-start gap-2 text-xs sm:text-sm">
+          <i class="fa-solid fa-triangle-exclamation text-amber-500 mt-1"></i>
+          <span><strong>Tekor Ongkos Ojek Online:</strong> Bolak-balik ojol Rp 20.000 - Rp 25.000 per perjalanan x 2 kali sehari = Rp 1.000.000 - Rp 1.250.000 per bulan hanya untuk ongkos jalan!</span>
+        </li>
+        <li class="flex items-start gap-2 text-xs sm:text-sm">
+          <i class="fa-solid fa-triangle-exclamation text-amber-500 mt-1"></i>
+          <span><strong>Stamina Terkuras di Jalan:</strong> Jam 7 pagi sudah harus berjibaku dengan debu dan kemacetan Jalan Raya Puspiptek.</span>
+        </li>
+        <li class="flex items-start gap-2 text-xs sm:text-sm">
+          <i class="fa-solid fa-triangle-exclamation text-amber-500 mt-1"></i>
+          <span><strong>Tagihan Siluman:</strong> Belum lagi biaya listrik token yang boros karena meteran bersama tidak terkontrol.</span>
+        </li>
+      </ul>
+
+      <p>Ketimbang stamina dan uang saku kamu habis sia-sia di jalan setiap hari, ada opsi cerdas yang ramah di kantong dan lokasinya super pas: <strong>Kost Bunda John di Komplek Batan Lama No. A5, Kademangan, Kec. Setu / Serpong, Tangerang Selatan</strong>.</p>
+
+      <h2 class="text-lg sm:text-xl font-bold text-stone-900 mt-6 mb-2">Fasilitas "Gratisan" Nyata yang Dinikmati Penghuni Kost Bunda John</h2>
+      <p>Selain gratis survei dan konsultasi tanpa biaya calo, Kost Bunda John menyediakan berbagai fasilitas riil yang membantu penghuni hidup hemat dan produktif:</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-5">
+        <div class="p-4 rounded-2xl bg-[#F4F8FB] border border-[#D0E3EF] shadow-sm">
+          <div class="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-sm mb-2">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h3 class="font-bold text-stone-800 text-sm mb-1">Gratis Listrik & Wi-Fi</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Khusus Kamar Rumah A Utama tarif Rp 650.000 sudah <em>All-In</em> mencakup listrik pemakaian normal dan koneksi internet Wi-Fi tanpa iuran tambahan.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-[#F4F8FB] border border-[#D0E3EF] shadow-sm">
+          <div class="w-8 h-8 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-sm mb-2">
+            <i class="fa-solid fa-kitchen-set"></i>
+          </div>
+          <h3 class="font-bold text-stone-800 text-sm mb-1">Gratis Dapur Bersama</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Dilengkapi kompor gas, kulkas bersama untuk menyimpan bahan makanan, wastafel cuci piring, dan dispenser air galon gratis.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-[#F4F8FB] border border-[#D0E3EF] shadow-sm">
+          <div class="w-8 h-8 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-sm mb-2">
+            <i class="fa-solid fa-map-location-dot"></i>
+          </div>
+          <h3 class="font-bold text-stone-800 text-sm mb-1">Jarak 3 Menit ke BRIN</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Hanya 1.2 km dari gerbang riset BRIN KST Serpong. Cukup 3-5 menit berkendara motor atau sepeda santai tanpa terkena kemacetan jalan raya.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-[#F4F8FB] border border-[#D0E3EF] shadow-sm">
+          <div class="w-8 h-8 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-sm mb-2">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="font-bold text-stone-800 text-sm mb-1">Lingkungan Komplek Asri</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Berada di dalam komplek perumahan Batan Lama yang hijau, tenang, dan aman. Sangat kondusif untuk istirahat dan belajar malam hari.
+          </p>
+        </div>
+      </div>
+
+      <h2 class="text-lg sm:text-xl font-bold text-stone-900 mt-6 mb-2">Cara Memanfaatkan Fasilitas Gratis Ini Sekarang Juga</h2>
+      <p>Daripada kamu makin penasaran atau keduluan kehabisan kamar oleh gelombang mahasiswa magang baru, mendingan manfaatkan fasilitas gratis survei dan tanya jawabnya sekarang juga:</p>
+
+      <ol class="list-decimal pl-5 space-y-2 text-xs sm:text-sm text-stone-700 my-4">
+        <li><strong>Konsultasi WhatsApp:</strong> Kirim pesan ke pengelola di <strong>0896-6990-9373</strong> untuk cek ketersediaan kamar terbaru.</li>
+        <li><strong>Survei Online:</strong> Intip denah rumah dan tata letak kamar secara interaktif di halaman <a href="denah.html" class="text-[#3A6FA8] font-bold hover:underline">Denah Rumah</a> dan katalog di <a href="kamar.html" class="text-[#3A6FA8] font-bold hover:underline">Tipe Kamar</a>.</li>
+        <li><strong>Cek Titik Presisi Maps:</strong> Buka langsung navigasi GPS melalui tautan resmi <a href="https://maps.app.goo.gl/HtAMS4VSvMruzY4Q7" target="_blank" class="text-[#3A6FA8] font-bold hover:underline">Google Maps Kost Bunda Batan Lama A5</a>.</li>
+        <li><strong>Kunjungi Sumber Asli:</strong> Baca dokumentasi lengkap di blog <a href="http://www.patmina.my.id/2026/10/tentang-kami-kost-bunda-batan-lama-a5.html" target="_blank" class="text-[#3A6FA8] font-bold hover:underline">patmina.my.id</a>.</li>
+      </ol>
+    `
+  },
+  {
     id: "rekomendasi-kost-murah-dekat-brin-kst-serpong",
     slug: "rekomendasi-kost-murah-dekat-brin-kst-serpong",
     title: "Rekomendasi Kost Murah Dekat BRIN KST Serpong Mulai 650 Ribuan All-In",
