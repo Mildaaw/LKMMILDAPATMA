@@ -821,3 +821,16 @@ function getArticleBySlug(slug) {
   if (!slug) return null;
   return SEO_ARTICLES.find(a => a.slug === slug || a.id === slug);
 }
+
+// Global browser window exports for seamless compatibility
+if (typeof window !== "undefined") {
+  window.KOST_INFO = KOST_INFO;
+  window.ROOMS_DATA = ROOMS_DATA;
+  window.COMMUNAL_FACILITIES = typeof COMMUNAL_FACILITIES !== "undefined" ? COMMUNAL_FACILITIES : null;
+  window.SEO_ARTICLES = SEO_ARTICLES;
+  window.getRoomById = getRoomById;
+  window.getArticleBySlug = getArticleBySlug;
+  window.generateRoomWhatsAppUrl = generateRoomWhatsAppUrl;
+  window.generateDirectWhatsAppUrl = generateDirectWhatsAppUrl;
+}
+

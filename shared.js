@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   await initNavbar();
   await initFooter();
   initRoomModal();
+  initArticleModal();
   checkUrlParamsForModal();
+  checkHashOrParamsForArticleModal();
 });
 
 // Modular Navbar Loader (fetches navbar.html or uses template fallback)
@@ -447,3 +449,212 @@ function checkUrlParamsForModal() {
     }, 300);
   }
 }
+
+// ============================================================================
+// ARTICLE MODAL & READER (Global for index.html, artikel.html, etc.)
+// ============================================================================
+
+function initArticleModal() {
+  let modal = document.getElementById("article-modal");
+  if (!modal) {
+    modal = document.createElement("div");
+    modal.id = "article-modal";
+    modal.className = "fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-stone-900/50 backdrop-blur-sm hidden opacity-0 transition-opacity duration-200";
+    modal.innerHTML = `
+      <div id="article-modal-container" class="relative w-full max-w-3xl bg-white border border-[#D0E3EF] rounded-3xl shadow-2xl overflow-hidden transform scale-95 transition-transform duration-200 max-h-[90vh] flex flex-col">
+        <!-- Header with Close Button -->
+        <div class="p-5 border-b border-[#D0E3EF] flex items-center justify-between bg-[#F4F8FB]">
+          <div class="pr-3">
+            <span id="modal-art-category" class="text-xs font-semibold text-[#3A6FA8] uppercase tracking-wider block">Kategori</span>
+            <h2 id="modal-art-title" class="text-base sm:text-xl font-bold text-stone-900 leading-snug">Judul Artikel</h2>
+          </div>
+          <button id="modal-art-close-btn" onclick="closeArticleModal()" aria-label="Tutup Artikel" class="w-9 h-9 flex-shrink-0 rounded-full bg-white border border-stone-200 flex items-center justify-center text-stone-500 hover:text-stone-900 transition hover:bg-stone-100 shadow-sm cursor-pointer">
+            <i class="fa-solid fa-xmark text-base"></i>
+          </button>
+        </div>
+
+        <!-- Body Content -->
+        <div class="p-6 sm:p-8 overflow-y-auto space-y-4 text-stone-700 text-sm leading-relaxed" id="modal-art-content">
+          <!-- Injected via JS -->
+        </div>
+
+        <!-- Footer CTA -->
+        <div class="p-4 bg-[#F4F8FB] border-t border-[#D0E3EF] flex flex-col sm:flex-row items-center justify-between gap-3">
+          <span class="text-xs text-stone-500">Tertarik booking kamar dekat BRIN KST Serpong?</span>
+          <a id="modal-art-wa-btn" href="https://wa.me/6289669909373" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold flex items-center justify-center gap-1.5 shadow-sm transition active:scale-95">
+            <i class="fa-brands fa-whatsapp text-base"></i> Hubungi WhatsApp: 0896-6990-9373
+          </a>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(modal);
+  }
+
+  // Backdrop click listener
+  modal.addEventListener("click", (e) => {
+    if (e.target.id === "article-modal") {
+      closeArticleModal();
+    }
+  });
+
+  const closeBtn = document.getElementById("modal-art-close-btn");
+  if (closeBtn) {
+    closeBtn.onclick = closeArticleModal;
+  }
+}
+
+function showArticleDetail(articleId) {
+  const articles = (typeof SEO_ARTICLES !== "undefined" && SEO_ARTICLES) 
+    ? SEO_ARTICLES 
+    : (typeof window !== "undefined" && window.SEO_ARTICLES ? window.SEO_ARTICLES : []);
+
+  if (!articles || articles.length === 0) {
+    console.warn("Data artikel belum dimuat.");
+    return;
+  }
+
+  const cleanId = (articleId || "").replace(/^#/, "").trim();
+  if (!cleanId) return;
+
+  const article = articles.find(a => a.id === cleanId || a.slug === cleanId);
+  if (!article) {
+    console.warn("Artikel tidak ditemukan untuk id/slug:", cleanId);
+    return;
+  }
+
+  let modal = document.getElementById("article-modal");
+  if (!modal) {
+    initArticleModal();
+    modal = document.getElementById("article-modal");
+  }
+
+  const container = document.getElementById("article-modal-container");
+  const titleEl = document.getElementById("modal-art-title");
+  const catEl = document.getElementById("modal-art-category");
+  const contentEl = document.getElementById("modal-art-content");
+  const waBtn = document.getElementById("modal-art-wa-btn");
+
+  if (!modal || !container || !titleEl || !contentEl) {
+    console.error("Elemen modal artikel tidak lengkap.");
+    return;
+  }
+
+  titleEl.textContent = article.title;
+  if (catEl) catEl.textContent = article.category || "Artikel & Tips";
+
+  const authorBadge = article.author 
+    ? `<span>•</span><span><i class="fa-solid fa-pen-nib mr-1 text-[#3A6FA8]"></i> ${article.author}</span>` 
+    : "";
+
+  const sourceBadge = article.originalUrl ? `
+    <div class="mt-6 pt-4 border-t border-[#D0E3EF] flex flex-wrap items-center justify-between gap-2 text-xs text-stone-500 bg-stone-50 p-3 rounded-xl">
+      <span class="flex items-center gap-1.5"><i class="fa-solid fa-link text-[#3A6FA8]"></i> Artikel Terverifikasi di Blog Resmi:</span>
+      <a href="${article.originalUrl}" target="_blank" rel="noopener noreferrer" class="font-bold text-[#3A6FA8] hover:underline flex items-center gap-1">
+        Buka Sumber Asli di patmina.my.id &rarr;
+      </a>
+    </div>
+  ` : "";
+
+  contentEl.innerHTML = `
+    <div class="text-xs text-stone-500 mb-4 flex flex-wrap items-center gap-2.5 pb-3 border-b border-[#D0E3EF]">
+      <span><i class="fa-regular fa-clock mr-1"></i> ${article.readTime || "4 menit baca"}</span>
+      <span>•</span>
+      <span><i class="fa-regular fa-calendar mr-1"></i> ${article.date || "Oktober 2026"}</span>
+      ${authorBadge}
+    </div>
+    <div class="prose max-w-none text-stone-700 leading-relaxed space-y-4">
+      ${article.content}
+    </div>
+    ${sourceBadge}
+  `;
+
+  if (waBtn) {
+    const waText = `Halo Pengelola Kost Bunda John,\nSaya baru saja membaca artikel "${article.title}". Saya tertarik survei lokasi / tanya ketersediaan kamar di Komplek Batan Lama No. A-5. Apakah saat ini ada unit yang siap huni? Terima kasih!`;
+    waBtn.href = `https://wa.me/6289669909373?text=${encodeURIComponent(waText)}`;
+  }
+
+  // Update hash smoothly for bookmarking and back navigation
+  if (window.location.hash !== "#" + article.slug) {
+    history.replaceState(null, "", "#" + article.slug);
+  }
+
+  document.body.style.overflow = "hidden";
+  modal.classList.remove("hidden");
+  void modal.offsetWidth; // force browser layout recalculation
+  modal.classList.remove("opacity-0");
+  container.classList.remove("scale-95");
+  container.classList.add("scale-100");
+}
+
+function closeArticleModal() {
+  const modal = document.getElementById("article-modal");
+  const container = document.getElementById("article-modal-container");
+  if (!modal || !container) return;
+
+  modal.classList.add("opacity-0");
+  container.classList.remove("scale-100");
+  container.classList.add("scale-95");
+  document.body.style.overflow = "";
+
+  setTimeout(() => {
+    modal.classList.add("hidden");
+    if (window.location.hash) {
+      history.replaceState(null, "", window.location.pathname + window.location.search);
+    }
+  }, 200);
+}
+
+// Deep linking and hash monitoring for articles
+function checkHashOrParamsForArticleModal() {
+  const hash = window.location.hash ? window.location.hash.replace(/^#/, "").trim() : "";
+  const urlParams = new URLSearchParams(window.location.search);
+  const articleParam = urlParams.get("article") || urlParams.get("artikel");
+  const targetSlug = hash || articleParam;
+
+  if (targetSlug) {
+    const articles = (typeof SEO_ARTICLES !== "undefined" && SEO_ARTICLES) 
+      ? SEO_ARTICLES 
+      : (typeof window !== "undefined" && window.SEO_ARTICLES ? window.SEO_ARTICLES : []);
+    
+    if (articles && articles.some(a => a.id === targetSlug || a.slug === targetSlug)) {
+      setTimeout(() => {
+        showArticleDetail(targetSlug);
+      }, 150);
+    }
+  }
+}
+
+// Global escape key handler for all modals
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeModal();
+    closeArticleModal();
+  }
+});
+
+// Global hashchange handler
+window.addEventListener("hashchange", () => {
+  const hash = window.location.hash ? window.location.hash.replace(/^#/, "").trim() : "";
+  if (hash) {
+    const articles = (typeof SEO_ARTICLES !== "undefined" && SEO_ARTICLES) 
+      ? SEO_ARTICLES 
+      : (typeof window !== "undefined" && window.SEO_ARTICLES ? window.SEO_ARTICLES : []);
+    if (articles && articles.some(a => a.id === hash || a.slug === hash)) {
+      showArticleDetail(hash);
+      return;
+    }
+  }
+  const modal = document.getElementById("article-modal");
+  if (modal && !modal.classList.contains("hidden")) {
+    closeArticleModal();
+  }
+});
+
+// Expose globally
+if (typeof window !== "undefined") {
+  window.initArticleModal = initArticleModal;
+  window.showArticleDetail = showArticleDetail;
+  window.openArticleModal = showArticleDetail;
+  window.closeArticleModal = closeArticleModal;
+}
+
